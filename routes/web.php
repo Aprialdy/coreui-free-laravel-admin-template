@@ -59,6 +59,7 @@ Route::group(['middleware' => ['get.menu']], function () {
             Route::get('/modals', function(){   return view('dashboard.notifications.modals'); });
         });
         Route::resource('notes', 'NotesController');
+        Route::resource('contactus', 'ContactUsController');
     });
     Auth::routes();
 

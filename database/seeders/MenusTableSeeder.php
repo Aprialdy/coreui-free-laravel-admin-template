@@ -137,6 +137,7 @@ class MenusTableSeeder extends Seeder
         $this->insertLink('guest,user,admin', 'Dashboard', '/', 'cil-speedometer');
         $this->beginDropdown('admin', 'Settings', 'cil-calculator');
             $this->insertLink('admin', 'Notes',                   '/notes');
+            $this->insertLink('admin', 'Contactus',                   '/contactus');
             $this->insertLink('admin', 'Users',                   '/users');
             $this->insertLink('admin', 'Edit menu',               '/menu/menu');
             $this->insertLink('admin', 'Edit menu elements',      '/menu/element');
@@ -205,6 +206,7 @@ class MenusTableSeeder extends Seeder
         $this->beginDropdown('guest,user,admin', 'Pages');
         $id = $this->insertLink('guest,user,admin', 'Dashboard',    '/');
         $id = $this->insertLink('user,admin', 'Notes',              '/notes');
+        $id = $this->insertLink('admin', 'Contactus',              '/contactus');
         $id = $this->insertLink('admin', 'Users',                   '/users');
         $this->endDropdown();
         $id = $this->beginDropdown('admin', 'Settings');
